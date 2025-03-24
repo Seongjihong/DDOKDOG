@@ -1,0 +1,1020 @@
+@charset "utf-8";
+/* 웹 폰트 */
+
+@font-face {
+    font-family: 'SDSamliphopangche_Basic';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Basic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+em,
+img,
+small,
+strong,
+b,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+section,
+summary,
+video,
+* {
+    padding: 0;
+    margin: 0;
+}
+ul,ol
+{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+html{
+    /* rem 폰트 사이즈 적을려면 적기 */
+
+    /* 폰트사이즈 고정 */
+     /* Prevent font scaling in landscape */
+
+     -webkit-text-size-adjust: none; /*Chrome, Safari, newer versions of Opera*/
+
+     -moz-text-size-adjust: none; /*Firefox*/
+
+     -ms-text-size-adjust: none;  /*Ie*/
+
+     -o-text-size-adjust: none; /*old versions of Opera*/
+}
+
+div
+{
+    box-sizing: border-box;
+}
+
+h1
+{
+    font-family: 'SDSamliphopangche_Basic';
+    line-height: 49px;
+    font-size: 49px;
+    font-weight: 400;
+}
+
+span
+{
+    color: #ffa000;
+}
+
+body{
+    font-family: 'SUITE', sans-serif;
+    font-size: 18px;
+    /* 행간 지정 */
+    line-height: 30px;
+    color: #333;
+    font-weight: 700;
+}
+
+
+
+#wrap
+{
+    min-width: 1300px;
+}
+
+
+/* header */
+
+#header_box
+{
+    height: 100px;
+    background-color: #ffa000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+
+
+}
+/* header orange*/
+.header_orange
+{ 
+    height: 100px;
+    margin: 0 auto;
+
+
+}
+.header_inner
+{
+    background-color: #ffa000;
+    position: relative;
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* logo */
+.header_logo
+{
+    margin-top: 20px;
+}
+
+/* heder gnb menu */
+
+/* gnb_login */
+
+.gnb_login
+{
+    display: flex;
+    position: absolute;
+    top:5px;
+    right: 0;
+
+}
+.gnb_login li a
+{
+    padding-left: 12px;
+    display: block;
+    font-size: 12px;
+
+}
+
+.gnb_login li a:hover
+{
+    color: white;
+}
+/* gnb_menu */
+.gnb_menu
+{
+    display: flex;
+    position: absolute;
+    bottom:0px;
+    right: 0;
+    color: white;
+}
+
+.gnb_menu li a
+{
+    margin-left: 50px;
+    padding: 5px 0px 10px 0px;
+    display: block;
+ 
+    font-size: 18px;
+}
+
+.gnb_menu li a:hover
+{
+
+    color: #333;
+}
+
+.on
+{
+
+    color: #333;
+}
+
+/* main wrap */
+#main_wrap
+{
+    background: #ffa000 url(../images/ddokdog_main_bg1.svg) top center;
+    height: 824px;
+    margin: 0px auto;
+
+}
+
+#main_content
+{
+    width: 1200px;
+    height: 824px;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* main text box */
+#main_text_box
+{
+    margin-top: 80px;
+width: 388px;
+height: 347px;
+}
+#main_text_box .slogan
+{
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: -1.7px;
+    font-weight: 900;
+}
+
+#main_text_box h1
+{
+    padding: 30px 0px;
+    font-size: 50px;
+    letter-spacing: -0.5px;
+    line-height: 52px;
+}
+
+.skill_list
+{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    letter-spacing: -1.5px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.skill_list li::after
+{
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 15px;
+    background-color: #ffa000;
+    margin: 0 2.5px;
+    vertical-align: -1px;
+
+}
+
+.skill_list li:last-child::after,.skill_list li:nth-child(3)::after 
+{
+    content: none;
+}
+
+/* download butten */
+#main_botten_wrap
+{
+    display: flex;
+justify-content: space-between;
+}
+
+#download_butten a
+{
+    width: 180px;
+    height: 50px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    border-radius: 10px;
+    font-family: 'SDSamliphopangche_Basic';
+    box-shadow: 0px 4px 2px #ffa20081;
+	transition: all .5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.google_play a svg
+{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    fill:#ffa000;
+
+}
+.google_play a p
+{
+
+    position: absolute;
+    top: 12px;
+    right: 30px;
+    fill:#ffa000;
+}
+
+/* app store */
+.app_store a svg
+{
+    position: absolute;
+    top: 8px;
+    left: 30px;
+    fill:#ffa000;
+}
+.app_store a p
+{
+    position: absolute;
+top: 12px;
+right: 40px;
+}
+
+
+/* download hover */
+
+#download_butten a:hover
+{
+ 
+    background-color: #ffa000;
+    color: white;
+    box-shadow: none;
+		box-shadow: none;
+		transform: translateY(5px);
+
+}
+
+#download_butten a:hover .gp , #download_butten a:hover .ap
+{
+    fill: #ffffff;
+}
+
+
+
+
+
+/* main_img_box */
+#main_img_box
+{
+    width: 664px;
+    height: 856px;
+position: relative;
+}
+
+.img_back_phone
+{
+    position: absolute;
+    bottom: -0px;
+    left: 50px;
+    z-index: 1;
+    filter: drop-shadow(0px 4px 5px #3333332f); 
+}
+.img_phoneshadow
+{
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+}
+
+/* container */
+#container
+{
+    height: 800px;
+
+}
+
+.bage_box
+{
+    background-color: #FFF0E3;
+}
+
+#content
+{
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+
+/* c1 */
+.c1
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.c1_img_box
+{
+    width: 566px;
+    height:600px;
+    display: flex;
+position: relative;
+}
+.c1_img_box img
+{
+display: block;
+filter: drop-shadow(0px 4px 5px #3333332f);
+}
+
+.c1_img_phone_list
+{
+    position: absolute;
+    top: 70px;
+    right: 0;
+}
+
+/* c1_text_box */
+.c1_text_box 
+{
+    width: 389px;
+
+}
+.c1_text_box p
+{
+    padding: 60px 0;
+}
+.c1_text_box h1
+{
+line-height: 58px;
+letter-spacing: 0.5px;
+
+}
+
+
+
+
+/* orange_butten */
+#orange_butten
+{
+    width: 389px;
+    height: 72px;
+    position: relative;
+
+
+}
+#orange_butten a
+{
+ 
+    display: inline-block;
+    width: 389px;
+    height: 72px;
+    background-color: #ffa000;
+    border-radius: 50px;
+    font-weight: 800;
+    line-height: 24px;
+    color: white;
+    transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+#orange_butten a p
+{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#orange_butten a svg
+{
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+}
+
+/* orange butten hover */
+#orange_butten a:hover
+{
+    background-color: white;
+    color: #333;
+}
+
+#orange_butten a:hover .o_bt_g
+{
+    stroke: #ffa000;
+}
+
+/* c2 */
+.c2
+{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.c2_text_box
+{
+    margin-top: 70px ;
+}
+.c2_text_box p
+{
+    font-family: 'SDSamliphopangche_Basic';
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: 4px;
+}
+.c2_text_box h1
+{
+    line-height: 58px;
+    letter-spacing: -2px;
+}
+
+
+.c2 img
+{
+    filter: drop-shadow(0px 4px 5px #3333332f);
+    display: block;
+ 
+}
+
+
+.c2_img_calender,.c2_img_mydog
+{
+    margin-top: 100px;
+}
+
+
+.c2_bubble_top
+{
+    position: absolute;
+    top: 32%;
+    left:25%;
+    transform: translateX(-50%);
+
+}
+.c2_bubble_bottom
+{
+    position: absolute;
+    top: 50%;
+    right: 26%;
+    transform: translateX(50%);
+}
+/* c3 */
+
+.white_box
+{
+    background: white url(../images/ddokdog_s3_bg.svg) top -10px center;
+}
+
+.c3
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.c3_text_box 
+{
+    margin-top: 200px;
+}
+
+
+.c3_text_box .top_text
+{
+    font-family: 'SDSamliphopangche_Basic';
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: -1.25px;
+}
+
+.c3_text_box h1
+{
+    line-height: 58px;
+    letter-spacing: -3px;
+    padding-bottom: 61px;
+}
+
+.c3_img
+{
+    display: flex;
+    align-items: end;
+}
+
+.c3_img img
+{
+    display: block;
+}
+
+.c3_img_badge
+{
+    padding-right: 10px;
+}
+
+.c3_img_qna
+{
+    filter: drop-shadow(0px 4px 5px #3333332f);
+}
+
+/* container bg */
+#container_bg
+{
+    height: 1656px;
+    background: white url(../images/ddokdog_s34_bg.svg) top -90px center no-repeat;
+}
+
+/* c4 */
+#content2
+{
+    height: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.c4
+{
+    margin-top: 100px;
+width: 1200px;
+height: 800px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+align-items: center;
+
+}
+
+.c4_text_box h1
+{
+    padding-bottom: 14px;
+    letter-spacing: -4.5px;
+}
+
+.c4_text_box p
+{
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+
+/* c4 ornge butten */
+
+#c4_buttenbg
+{
+    margin-top: 20px;
+}
+
+#c4_butten
+{
+    width: 407px;
+    height: 156px;
+    margin:  0 auto;
+    position: relative;
+}
+
+#c4_orangebutten a
+{
+ 
+    display: inline-block;
+    width: 389px;
+    height: 72px;
+    background-color: #ffa000;
+    border-radius: 50px;
+    font-weight: 800;
+    line-height: 24px;
+    color: white;
+    transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+#c4_orangebutten a p
+{
+    position: absolute;
+    top: 16%;
+left: 20%;
+}
+
+#c4_orangebutten a svg
+{
+    position: absolute;
+    top: 23%;
+    right: 20%;
+    transform: translateY(-50%);
+}
+
+/* orange butten hover */
+#c4_orangebutten a:hover
+{
+    background-color: white;
+    color: #333;
+}
+
+#c4_orangebutten a:hover .o_bt_g
+{
+    stroke: #ffa000;
+}
+
+/* swiper */
+#gallery {
+    position: relative;
+    width: 643px;
+    height: 523px;
+    margin: 0 auto;
+}
+
+
+#gallery .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+#gallery .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 423px;
+}
+
+#gallery .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* c5 */
+#content3
+{
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    margin-top: 100px;
+    position: relative;
+}
+.c5_text_box
+{
+padding-top: 30px;
+    text-align: end;
+}
+
+.counter
+{
+    display: inline-block;
+    width: 70px;
+}
+
+.c5_text_box h1
+{
+    padding-bottom: 72px;
+    font-size: 48px;
+    font-weight: 64px;
+    letter-spacing: -2px;
+}
+
+.c5_img
+{
+    position: absolute;
+    bottom: -1.2px;
+    left: 0;
+    z-index: 1;
+}
+
+.c5_img img
+{
+    display: block;
+}
+/* c5 butten */
+
+#c5_butten
+{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+
+}
+
+#c5_orange_bt
+{
+position: absolute;
+bottom: 0;
+left: 0;
+}
+
+#c5_orange_bt a p
+{
+margin-top: 40px;
+margin-left: 470px;
+text-align: start;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.text_white
+{
+        font-size:50px;
+    line-height: 60px;
+    color: white;
+    font-weight: 800;
+}
+
+#c5_orange_bt a
+{
+    display: inline-block;
+    width: 1200px;
+    height: 150px;
+    background-color: #ffa000;
+    border-radius: 25px;
+    transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+#c5_orange_bt a svg{
+    position: absolute;
+    bottom: 36px;
+    right: 150px;
+}
+
+/* #c5 a hover */
+#c5_orange_bt a:hover
+{
+    color: white;
+    background-color: #333;
+}
+
+#c5_orange_bt a:hover .text_white
+{
+    color: #ffa000;
+}
+
+#c5_orange_bt a:hover .wb
+{
+    stroke: #ffa000;
+}
+
+
+/* c6 */
+
+#c6bg
+{
+    margin-top: 100px;
+    background-color: #ffa000;
+    height: 786px;
+}
+#c6
+{
+
+    width: 1200px;
+    height: 786px;
+ margin: 0 auto;
+ position: relative;
+ display: flex;
+align-items: center;
+
+}
+#c6_png
+{
+position: absolute;
+bottom: -32px;
+right: 0;
+
+
+}
+#c6_png img
+{
+    display: block;
+
+}
+
+#c6_logo
+{
+    margin-bottom: 50px;
+}
+
+#c6_logo img
+{
+    display: block;
+}
+
+.c6_text_box h1
+{
+  line-height: 58px;
+}
+
+.c6_text_box h1 span
+{
+    font-weight: 400;
+}
+
+
+/* fotter */
+
+#footerbox
+{
+height: 200px;
+background-color: #333;
+}
+
+#footer_inner
+{
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+padding-top: 30px;
+    justify-content: space-between;
+
+}
+
+.footer_text
+{
+    width: 500px;
+font-size: 14px;
+line-height: 20px ;
+letter-spacing: -0.5px;
+color: #999;
+
+
+}
+
+/* footer_list */
+.footer_list
+{
+
+    display: flex;
+}
+.footer_list li::after
+{
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 12px;
+    background-color:  #999;
+    margin: 0 10.8px;
+    vertical-align: -1px;
+
+}
+
+.footer_list li:nth-child(5)::after
+{
+    content: none;
+    
+}
+
+.footer_list li a , .ddokdog_loc
+{
+    color: #999;
+}
+.footer_list li a:hover
+{
+  color: white;
+}
+
+
+.ddokdog_loc
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ddokdog_loc li::after
+{
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 12px;
+    background-color:  #999;
+    margin: 0 8.5px;
+    vertical-align: -1px;
+
+}
+.ddokdog_loc li:nth-child(4)::after ,.ddokdog_loc li:nth-child(3)::after
+{
+    content: none;
+}
+
+.footer_cl
+{
+    margin-top: 50px;
+}
+
+
+.sns_list
+{
+    display: flex;
+}
+
+.sns_list img
+{
+    display: block;
+}
+
+.sns_list li a
+{
+    display: block;
+    margin-left: 20px;
+    opacity: 50%;
+}
+
+.sns_list li:nth-child(4)
+{
+    margin-top: 3px;
+}
+
+.sns_list li a:hover
+{
+    opacity: 100%;
+}
